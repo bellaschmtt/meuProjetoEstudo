@@ -59,7 +59,18 @@ input[type="text"], input[type="password"] {
     outline: none;
     width: 100%;
 }
-
+button[type="submit"] {
+    background: #660fc8;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
 /* .botao {
     width: 100px;
     height: 40px;
