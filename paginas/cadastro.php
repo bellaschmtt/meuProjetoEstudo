@@ -67,44 +67,40 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/styleFormulario.css"> 
-    <!-- <link rel="stylesheet" href="../CSS/styleHeader.css">
-    <link rel="stylesheet" href="CSS/styleFooter.css"> -->
-
+    <link rel="stylesheet" href="../css/styleCadastro.css"> 
+    
     <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- font-family: 'Mulish', sans-serif; -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 </head>
 
 <body>
+   
     <div class="container">
         <form method="POST" action="" class="form">
-            <h1>Cadastro</h1>
+            <h2>Cadastro</h2>
 
             <label for="email">Nome Completo:</label>
             <br>
             <input type="text" name="nome" value="<?php echo $nome?>">
-            <span class="obrigatorio">* <?php echo $nomeErr ?></span>
+            <span class="obrigatorio"> <?php echo $nomeErr ?></span>
             <br>
 
             <label for="senha">Email:</label>
             <br>
             <input type="text" name="email" value="<?php echo $email?>">
-            <span class="obrigatorio">* <?php echo $emailErr ?></span>
+            <span class="obrigatorio"> <?php echo $emailErr ?></span>
             <br>
             
             <label for="senha">Senha:</label>
             <br>
             <input type="password" name="senha" value="<?php echo $senha?>">
-            <span class="obrigatorio">* <?php echo $senhaErr ?></span>
+            <span class="obrigatorio"> <?php echo $senhaErr ?></span>
             <br>
             <br>
-            <label for="terms">Terms:</label>
-            <input class="terms" type="checkbox" name="administrador">
+            
+            <input class="terms" type="checkbox" name="administrador">Terms
             <br><br>
-            <input class="botao" type="submit" value="Salvar" name="cadastro">
+            <input class="button" type="submit" value="Salvar" name="cadastro">
             <span class="obrigatorio"><?php echo $msgErr ?></span>
             <p>Já uma conta?<a href="login.php">Entre aqui</a></p>
         </form>
